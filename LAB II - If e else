@@ -1,4 +1,5 @@
 // Aula 22/08/2024
+// ATIVIDADE 1
 
 import java.util.Scanner;
 
@@ -20,4 +21,65 @@ public class Main {
 		}
 			x.close();
 	}
+}
+
+//ATIVIDADE 2
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in);
+
+		int opcao;
+
+		System.out.println("""
+			\n** Calculadora**
+			1 - Soma
+			2 - Subtração
+			3 - Multiplicação
+			4 - Divisão
+			""");
+
+		System.out.println("Digite a opção desejada: ");
+		opcao = entrada.nextInt();
+
+		if (opcao == 1) {
+		 System.out.println("Digite o primeiro número que deseja somar: ");
+		 double n1 = entrada.nextDouble();
+		 System.out.println("Digite o segundo número que deseja somar: ");
+		 double n2 = entrada.nextDouble();
+
+		 double soma = n1 + n2;
+		 System.out.println("Resultado da soma: " + soma);
+		 } else if (opcao == 2) {
+		 System.out.println("Digite o primeiro número que deseja subtrair: ");
+		 double n2 = entrada.nextDouble();
+		 System.out.println("Digite o segundo número que deseja subtrair: ");
+		 double num2 = entrada.nextDouble();
+
+		 double subtracao = n2 - num2;
+		 System.out.println("Resultado da subtração: " + subtracao);
+			
+		 } else if (opcao == 3) {
+		 System.out.println("Digite o primeiro número que deseja multiplicar: ");
+		 double n1 = entrada.nextDouble();
+		 System.out.println("Digite o segundo número que deseja multiplicar: ");
+		 double n2 = entrada.nextDouble();
+
+		 double multiplicacao = n1 * n2;
+
+		 System.out.println("Resultado da multiplicação: " + multiplicacao);
+		 } else if (opcao == 4) {
+		 System.out.println("Digite o primeiro número que deseja dividir: ");
+		 double n1 = entrada.nextDouble();
+		 System.out.println("Digite o segundo número que deseja dividir: ");
+		 double n2 = entrada.nextDouble();
+
+		 double divisao = n1 / n2;
+
+		 System.out.println("Resultado da divisão: " + divisao);
+		 } else {
+		 System.out.println("Opção inválida.");
+	}
+}
 }
