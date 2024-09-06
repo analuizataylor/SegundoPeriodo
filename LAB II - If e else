@@ -1,0 +1,23 @@
+// Aula 22/08/2024
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner x = new Scanner(System.in);
+
+		System.out.println("Insira uma idade: ");
+		int idade = x.nextInt();
+
+		if (idade < 12) {
+			System.out.println("É uma criança de " + idade + " anos");
+		} if (idade < 18) {
+			System.out.println("É um adolescente de " + idade + " anos");
+		} if (idade < 60) {
+			System.out.println("É um adulto de " + idade + " anos");
+		} else {
+			System.out.println("É um idoso de " + idade + " anos");
+		}
+			x.close();
+	}
+}
