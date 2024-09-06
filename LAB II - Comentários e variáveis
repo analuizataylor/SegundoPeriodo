@@ -1,3 +1,5 @@
+// Aula 15/08/2024
+
 public class Main {
   public static void main(String[] args) {
     // variavel de valor inteiro
@@ -9,6 +11,5 @@ public class Main {
     System.out.println("Idade: " + idade);
     System.out.print("Salário: " + salario);
 
-    
   }
 }
