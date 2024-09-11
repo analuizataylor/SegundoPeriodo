@@ -1,0 +1,42 @@
+// Aula 04/09/2024
+
+//código utilizando do while
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in);
+
+		int num;
+		System.out.println("Informe um número ou informe um número maior que 100 para sair: ");
+		num = entrada.nextInt();
+		
+		while (num < 101) {
+			System.out.println("Informe um número ou informe um número maior que 100 para sair: ");
+			num = entrada.nextInt();
+		}
+		
+		System.out.println("Você saiu do código");
+		entrada.close();
+	}
+}
+
+
+//código utilizando while
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in);
+
+		int num;
+		do {
+			System.out.println("Informe um número ou informe um número maior que 100 para sair: ");
+			num = entrada.nextInt();
+		} while (num < 101);
+		
+		System.out.println("Você saiu do código");
+		entrada.close();
+	}
+}
+
