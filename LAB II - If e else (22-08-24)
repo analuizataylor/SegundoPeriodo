@@ -1,14 +1,14 @@
-// Aula 22/08/2024
-// ATIVIDADE 1
+// aula 22/08/2024
+// ATIVIDADE 1 - identificar fase da vida com base na idade inserida
 
 import java.util.Scanner;
 
 public class Main {
 	public static void main(String[] args) {
-		Scanner x = new Scanner(System.in);
+		Scanner entrada = new Scanner(System.in);
 
 		System.out.println("Insira uma idade: ");
-		int idade = x.nextInt();
+		int idade = entrada.nextInt();
 
 		if (idade < 12) {
 			System.out.println("É uma criança de " + idade + " anos");
@@ -19,11 +19,11 @@ public class Main {
 		} else {
 			System.out.println("É um idoso de " + idade + " anos");
 		}
-			x.close();
+			entrada.close();
 	}
 }
 
-//ATIVIDADE 2
+//ATIVIDADE 2 - menu de opções de cálculos básicos
 import java.util.Scanner;
 
 public class Main {
