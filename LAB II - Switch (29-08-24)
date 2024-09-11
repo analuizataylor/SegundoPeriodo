@@ -1,5 +1,6 @@
-// Aula 29/08/2024
+// aula 29/08/2024
 
+// menu de dias da semana com base no que foi digitado
 import java.util.Scanner;
 
 public class Main {
