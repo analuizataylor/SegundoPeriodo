@@ -1,6 +1,6 @@
-// Aula 04/09/2024
+// aula 04/09/2024
 
-//código utilizando do while
+// ATIVIDADE 1 - utilizando do while
 import java.util.Scanner;
 
 public class Main {
@@ -22,7 +22,7 @@ public class Main {
 }
 
 
-//código utilizando while
+//ATIVIDADE 2 - utilizando while
 import java.util.Scanner;
 
 public class Main {
