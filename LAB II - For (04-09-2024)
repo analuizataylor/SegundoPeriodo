@@ -1,6 +1,6 @@
-// Aula 04/09/2024
+// aula 04/09/2024
 
-//código para gerar números pares de 1 a 10
+//ATIVIDADE 1 - gerar números pares de 1 a 10
 import java.util.Scanner;
 
 public class Main {
@@ -15,7 +15,7 @@ public class Main {
 	}
 }
 
-//código para gerar números ímpares de 1 a 10
+//ATIVIDADE 2 - gerar números ímpares de 1 a 10
 import java.util.Scanner;
 
 public class Main {
