@@ -1,0 +1,31 @@
+// Aula 04/09/2024
+
+//código para gerar números pares de 1 a 10
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in);
+
+		for (int i = 0; i < 10; i = i + 2){
+			System.out.println("Valor de i: " + i);
+		}
+
+		entrada.close();
+	}
+}
+
+//código para gerar números ímpares de 1 a 10
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in);
+
+		for (int i = 1; i < 10; i = i + 2){
+			System.out.println("Valor de i: " + i);
+		}
+
+		entrada.close();
+	}
+}
