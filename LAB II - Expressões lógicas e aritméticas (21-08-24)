@@ -1,12 +1,14 @@
-// Aula 21/08/2024
+// aula 21/08/2024
 
 import java.util.Scanner;
 
 public class Main {
 	public static void main(String[] args) {
+		// código base para inserir input
 		Scanner entrada = new Scanner(System.in);
 
 		System.out.println("Digite a primeira nota: ");
+		// inserir double pelo teclado
 		double n1 = entrada.nextDouble(); 
 		System.out.println("Digite a segunda nota: ");
 		double n2 = entrada.nextDouble(); 
