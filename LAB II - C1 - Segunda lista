@@ -28,3 +28,98 @@ public class C1L2EX1 {
 
 //----------
 
+/* 2. Faça um algoritmo que leia um número inteiro e verifique se ele é par ou ímpar. Imprima uma mensagem
+correspondente ao resultado. Se o número for zero, imprima: “o valor é zero”. */
+
+import java.util.Scanner;
+
+public class C1L2EX2 {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        int num;
+
+        System.out.println("Digite um número: ");
+        num = entrada.nextInt();
+
+        if (num != 0) {
+            if (num % 2 == 0) {
+                System.out.println("O número é par");
+            } else {
+                System.out.print("O número é impar");
+        }
+        } else {
+            System.out.println("O número é zero");
+        }
+
+        entrada.close();
+    }
+}
+
+//----------
+
+/* 10. Leia três números e imprima o maior deles. Não é necessário verificar se os números são iguais.*/
+
+import java.util.Scanner;
+
+public class C1L2EX9 {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        int n1, n2, n3;
+
+        System.out.println("Informe o primeiro número: ");
+        n1 = entrada.nextInt();
+        System.out.println("Informe o segundo número: ");
+        n2 = entrada.nextInt();
+        System.out.println("Informe o terceiro número: ");
+        n3 = entrada.nextInt();
+
+        int maior = 0;
+        if (n1 > maior) {
+            maior = n1;
+        } if (n2 > maior) {
+            maior = n2;
+        } else {
+            maior = n3;
+        }
+
+        System.out.println("O maior número é " + maior);
+        entrada.close();
+    }
+}
+
+//----------
+
+/* 12. Leia sexo e idade de uma pessoa e imprima maior idade ou menor idade, considerando que sexo masculino
+e maior idade se maior igual a 21 anos e sexo feminino e maior idade se maior igual a 18 anos. */
+import java.util.Scanner;
+
+public class C1L2EX12 {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        String sexo; int idade;
+        String fem = "F"; String masc = "M";
+
+        System.out.println("Informe o sexo entre F ou M: ");
+        sexo = entrada.nextLine();
+
+        System.out.println("Informa a idade:" );
+        idade = entrada.nextInt();
+
+        if (sexo == fem) {
+            if (idade > 18) {
+                System.out.println("É mulher e maior de idade");
+            } else {
+                System.out.println("É mulher e menor de idade");
+            }
+        } if (sexo == masc) {
+            if (idade > 21) {
+                System.out.println("É homem e maior de idade");
+            } else {
+                System.out.println("É homem e menor de idade");
+            }
+        } 
+        entrada.close();
+    } 
+}
