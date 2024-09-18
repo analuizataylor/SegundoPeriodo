@@ -1,0 +1,138 @@
+/* 1. Faça um algoritmo que gere e imprima uma lista com os números de 1 a 10 em ordem
+crescente.  */
+
+public class C1L3EX1 {
+    public static void main(String[] args) {
+
+        for (int i=0; i <11; i++) {
+            System.out.println(i);
+        }
+    }
+}
+
+//---------
+
+/* 2. Faça um programa que escreve na tela a mesma frase 10 vezes. E depois faça com
+que o programa mostre o número de cada linha no início e no final da linha */
+
+public class C1L3EX2 {
+    public static void main(String[] args) {
+
+        for (int i=0; i < 11; i++) {
+            System.out.println(i + " Sou um programa Java! " + i);
+        }
+    }
+}
+
+//---------
+
+/* 3) Faça um programa que vai pedindo números ao usuário até que este introduza o
+número -1. O computador deve dizer a média dos números introduzidos. */
+
+import java.util.Scanner;
+
+public class C1L3EX3 {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        int num; int total = 0; int contador = 0; 
+
+        System.out.println("Insira um número: ");
+        num = entrada.nextInt();
+        
+        while (num != -1) {
+            total += num; // Acumula a soma
+            contador++; // Incrementa o contador
+            System.out.println("Insira um número: ");
+            num = entrada.nextInt();
+        }
+        double media = total / contador;
+        System.out.println("A média dos números introduzidos é: " + media);
+        
+        entrada.close();
+    }
+}
+
+//----------
+
+/* 7) Apresentar todos os valores numéricos inteiros ímpares situados na faixa de 0 a n, onde
+n é um número fornecido pelo usuário do programa. A verificação se o número é ímpar
+será feita dentro do loop. Caso o número seja ímpar, mostre-o, não sendo, passe para
+o próximo número. */
+
+import java.util.Scanner;
+
+public class C1L3EX7 {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        int n;
+        System.out.println("Insira um número: ");
+        n = entrada.nextInt();
+        
+        for (int i=0; i < n; i++) {
+            //System.out.println(i);
+            if (i % 2 != 0) {
+                System.out.println(i + " é impar");
+            } 
+            
+        }
+    }
+}
+
+//---------
+
+/* 12)Faça um algoritmo que leia a altura e o sexo de n pessoas e imprima:
+a) - Quantos homens e mulheres foram medidas;
+b) - Quantos homens acima de 1,70;
+c) - A média das alturas das mulheres.
+OBS: O número n de pessoas será fornecida pelo usuário do programa no início da sua
+execução. */
+
+import java.util.Scanner;
+
+public class C1L3EX12 {
+    public static void main(String[] args){
+        Scanner entrada = new Scanner(System.in);
+
+        //criando variaveis
+        double pessoas; String sexo; double altura;
+        //criando constantes
+        double mulheres = 0 ; double homens = 0; double alturasMulheres = 0; double homens170 = 0;
+
+        System.out.println("Qual número de pessoas?");
+        pessoas = entrada.nextInt();
+        entrada.nextLine();
+
+        // para cada pessoa, duas perguntas
+        for (int i=0; i < pessoas; i++) {
+            System.out.println("Homem ou Mulher? (H ou M)");
+            sexo = entrada.nextLine();
+            System.out.println("Qual altura?");
+            altura = entrada.nextDouble();
+            entrada.nextLine();
+
+            // separando grupo homens
+            if (sexo.equals("H")) {
+                homens++;
+                if (altura > 1.70) {
+                    homens170++;
+                }
+
+            } 
+
+            // separando grupo mulheres
+            else if (sexo.equals("M")) {
+                mulheres++;
+                alturasMulheres += altura;
+            }
+
+            double mediaMulheres = alturasMulheres / mulheres;
+
+            System.out.println("Foi medido " + homens + " homens");
+            System.out.println(homens170 + " com altura acima de 1.70m");
+            System.out.println("Foi medido " + mulheres + " mulheres");
+            System.out.println("A média das alturasdas mulheres é de " + mediaMulheres);
+        }
+        entrada.close();
+    }
+}
